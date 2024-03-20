@@ -1,0 +1,424 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Michroma&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: grey;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Center and spread elements horizontally */
+    padding: 10px; /* Increase padding for spacing */
+}
+
+.company-name {
+    color: white;
+    font-family: 'Michroma', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Add these CSS rules to your existing styles */
+
+
+.search-bar {
+    /*flex: 0.5; /* Adjust the flex value to control the width */
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+}
+
+.search-bar [type="text"] {
+    flex: 1; /* Grow to take available space */
+    padding: 8px;
+    border: none;
+    border-radius: 25px;
+    padding-left: 25px;
+}
+
+.search-bar button {
+    background-color: rgba(0, 0, 0, 0.0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    line-height: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-bar button:hover {
+	color: gray;
+  }
+
+
+
+
+
+
+
+
+
+nav ul {
+    list-style: none;
+    display: flex; /* Make the list items horizontal */
+	align-items: center;
+}
+
+nav li {
+    margin-right: 15px; /* Add margin between navigation items */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.log-in-button {
+    display: flex;
+    align-items: center;
+}
+
+.log-in-button button {
+    background-color: rgba(0, 0, 0, 0.0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    line-height: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.log-in-button button:hover {
+    color: gray;
+}
+
+.banner {
+    text-align: center;
+    padding: 1px;
+    box-shadow: 0px 0px 10px rgba (0, 0, 0, 0.5);
+}
+
+.banner img {
+    max-width: 90%;
+}
+
+
+.category-dropdown {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 13%;
+    margin-left: 27px;
+    padding-bottom: 25px;
+}
+
+.category-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.subcategory-menu {
+ list-style: none;
+ background-color: rgba(0, 0, 0, 0.5);
+ padding: 10px;
+    /*position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: none;
+    width: 100%;*/
+}
+
+.subcategory-menu li {
+    margin: 5px 0;
+}
+
+.subcategory-menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0px;
+    font-size: 16px;
+}
+
+.category-dropdown:hover .subcategory-menu {
+    display: block;
+}
+
+/* PRODUCT STYLE */
+
+
+.product-container {
+    /*display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+   */
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 10px;
+    
+}
+
+.product:nth-child(3n + 1) {
+    margin-left: auto;
+}
+
+.product {
+    /*position: relative;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px; 
+    border-radius: 10px;
+    width: 75%;
+    height: auto;
+    margin: 0.5px;
+    flex-direction: column;
+    text-align: left;    */
+    width: calc(33.33% - 10px);
+    margin: 0 5px 10px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border-radius: 10px;
+    text-align: left;
+    padding: 1px;
+    /*
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    */
+}
+
+
+
+.product-card {
+    display: flex;
+    flex-direction: row   ;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: calc(106% - 20px);
+    /*margin: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;*/
+}
+
+.product info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.product-details {
+    font-family: 'Poppins', sans-serif;
+    flex-grow: 1;
+    padding: 0 20px;
+    text-align: left;
+
+    /*width: 60%;
+    flex-grow: 1;
+    padding: 0 20px;
+    color: white;*/
+}
+
+.additional-description {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product-details h3 {
+    font-size: 24px;
+}
+
+.product-details p {
+    color: black;
+    line-height: 1.4;
+    text-align: left;
+    font-size: 13px;
+    padding-left: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.product p {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    line-height: 1.4;
+    text-align: left;
+    font-size: 13px;
+    padding-left: 15px;
+}
+
+.product p:hover {
+    text-shadow: 0px 0px 5px white;
+}
+
+.buy-button {
+    background-color: rgba(47, 48, 49, 0.3);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Atlanta', sans-serif;
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+
+
+/* Media queries for responsiveness */
+
+/* For screens with a width of 768px or less */
+@media (max-width: 768px) {
+    
+    heaader {
+        text-align: center;
+    }
+
+    .header-content {
+        flex-direction: column; /* Stack elements vertically */
+		
+    }
+
+    .search-bar {
+        
+        margin-top: 10px; /* Add top margin for spacing */
+    }
+
+    nav ul {
+        padding-top: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav .dropdown {
+        position: static;
+        margin: none;
+    }
+
+    nav .dropdown .sub-menu {
+        display: none;
+    }
+
+    nav .dropdown:hover .sub-menu {
+        display: block;
+      
+    }
+
+    .product-container {
+        justify-content: center;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    .product-card {
+        width: calc(106% - 20px);
+    }
+
+    .product img {
+        width: 100%;
+    }
+
+    .additional-description {
+        padding-left: 0;
+    }
+
+    .category-dropdown {
+        position: static;
+        text-align: center;
+        display: none;
+    }
+
+    .category-btn {
+        display: none;
+    }
+
+    .subcategory-menu {
+        display: none;
+    }
+
+	
+}
+
+/* Additional media queries for other screen sizes as needed */
+
+nav .dropdown {
+    position: relative;
+}
+
+nav .sub-menu {
+    color: black;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgb(128, 66, 66);
+    box-shadow: 0 3px 6px rgba (0, 0, 0, 0.1);
+}
+
+nav .dropdown:hover .sub-menu {
+    display: block;
+}
+
+nav .sub-menu li {
+    padding: 10px;
+}
